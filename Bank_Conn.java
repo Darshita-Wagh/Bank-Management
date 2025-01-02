@@ -10,9 +10,9 @@ public class Bank_Conn {
 	public static Connection createC(){
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			String url = "jdbc:mysql://localhost:3306/ssvps";
+			String url = "jdbc:mysql://localhost:3306/bank";
 			String user = "root";
-			String pass = "Darsh@004";
+			String pass = "";
 			con = DriverManager.getConnection(url,user,pass);
 		}
 		catch (Exception e) {
